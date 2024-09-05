@@ -152,7 +152,7 @@ h1 {
     transform: scale(1.2);
 }
 
-/* Responsividade para Dispositivos Móveis */
+
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
@@ -182,7 +182,7 @@ h1 {
     }
 
     .sidebar:hover {
-        width: 100%; /* Manter a sidebar no tamanho da tela */
+        width: 100%; 
     }
 
     .sidebar ul li {
