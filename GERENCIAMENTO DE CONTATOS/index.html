@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ManagerCTT</h1>
+        
+        <div id="formContainer">
+            <form id="contactForm" aria-label="Formulário de Contatos" onsubmit="event.preventDefault(); addContact();">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="category">Categoria:</label>
+                <input type="text" id="category" placeholder="Categoria" required>
+            </form>
+            <div class="message" id="message"></div>
+        </div>
+        
+        <div class="contact-list-container">
+            <h2>Contatos Salvos</h2>
+            <div id="contactList"></div>
+        </div>
+        
+        <div class="sidebar">
+            <ul>
+                <li onclick="addContact()">
+                    <span class="icon">➕</span> Adicionar
+                </li>
+                <li onclick="openEditContact()">
+                    <span class="icon">✏️</span> Editar
+                </li>
+                <li onclick="openDeleteContact()">
+                    <span class="icon">🗑️</span> Remover
+                </li>
+                <li onclick="promptSearch()">
+                    <span class="icon">🔍</span> Buscar
+                </li>
+                <li onclick="exportContacts()">
+                    <span class="icon">📤</span> Exportar
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
