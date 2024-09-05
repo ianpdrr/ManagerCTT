@@ -74,7 +74,6 @@ h1 {
     margin-top: 24px;
     width: 100%;
     max-width: 400px;
-    
 }
 
 .contact-list-container h2 {
@@ -152,7 +151,6 @@ h1 {
     transform: scale(1.2);
 }
 
-
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
@@ -182,7 +180,7 @@ h1 {
     }
 
     .sidebar:hover {
-        width: 100%; 
+        width: 100%;
     }
 
     .sidebar ul li {
